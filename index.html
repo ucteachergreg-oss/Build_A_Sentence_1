@@ -96,7 +96,6 @@
             display: flex;
             align-items: center;
             gap: 15px;
-            margin-bottom: 20px;
         }
         button {
             background-color: #2ecc71;
@@ -118,21 +117,6 @@
         }
         .correct { color: #27ae60; }
         .incorrect { color: #e74c3c; }
-
-        /* Accessibility Section Styling */
-        .accessibility-alt {
-            border-top: 1px dashed #cbd5e1;
-            padding-top: 15px;
-            margin-top: 15px;
-            background-color: #f8fafc;
-            padding: 15px;
-            border-radius: 6px;
-        }
-        .accessibility-alt h3 {
-            margin-top: 0;
-            color: #475569;
-            font-size: 1em;
-        }
     </style>
 </head>
 <body>
@@ -143,7 +127,7 @@
         <div class="context">Context: Campus Bookstore</div>
         <div class="prompt">"I'm looking for the introduction to macroeconomics textbook, but the shelf is completely empty."</div>
         
-        <div class="sentence-builder" aria-hidden="true">
+        <div class="sentence-builder">
             <span class="fixed-text">"Don't worry,</span>
             <div class="drop-zone" data-expected="we"></div>
             <div class="drop-zone" data-expected="have"></div>
@@ -153,25 +137,18 @@
             <span class="fixed-text">."</span>
         </div>
 
-        <div class="word-bank" aria-hidden="true">
+        <div class="word-bank">
             <div class="word" draggable="true" id="w1-1">more</div>
             <div class="word" draggable="true" id="w1-2">copies</div>
             <div class="word" draggable="true" id="w1-3">have</div>
             <div class="word" draggable="true" id="w1-4">we</div>
             <div class="word" draggable="true" id="w1-5">in the back</div>
-            <div class="word" draggable="true" id="w1-6">order</div>
+            <div class="word" draggable="true" id="w1-6">ordered</div>
         </div>
 
-        <div class="controls" aria-hidden="true">
+        <div class="controls">
             <button onclick="checkAnswer('act-1')">Check Answer</button>
             <div class="feedback"></div>
-        </div>
-
-        <div class="accessibility-alt">
-            <h3>Activity 1: Screen Reader &amp; Keyboard Accessible Version</h3>
-            <p><strong>Task:</strong> Form a logical sentence by organizing the words below to complete the response.</p>
-            <p><strong>Sentence Structure:</strong> "Don't worry, [Blank 1] [Blank 2] [Blank 3] [Blank 4] [Blank 5]."</p>
-            <p><strong>Word Pool (contains 1 extra distractor word):</strong> more | copies | have | we | in the back | order</p>
         </div>
     </div>
 
@@ -179,7 +156,7 @@
         <div class="context">Context: Biology Lecture</div>
         <div class="prompt">"To understand how organisms function, we must look at mitochondria."</div>
         
-        <div class="sentence-builder" aria-hidden="true">
+        <div class="sentence-builder">
             <span class="fixed-text">"They are</span>
             <div class="drop-zone" data-expected="considered"></div>
             <div class="drop-zone" data-expected="the"></div>
@@ -189,25 +166,18 @@
             <span class="fixed-text">."</span>
         </div>
 
-        <div class="word-bank" aria-hidden="true">
+        <div class="word-bank">
             <div class="word" draggable="true" id="w2-1">powerhouses</div>
             <div class="word" draggable="true" id="w2-2">cells</div>
             <div class="word" draggable="true" id="w2-3">the</div>
             <div class="word" draggable="true" id="w2-4">considered</div>
             <div class="word" draggable="true" id="w2-5">of</div>
-            <div class="word" draggable="true" id="w2-6">time</div>
+            <div class="word" draggable="true" id="w2-6">energy</div>
         </div>
 
-        <div class="controls" aria-hidden="true">
+        <div class="controls">
             <button onclick="checkAnswer('act-2')">Check Answer</button>
             <div class="feedback"></div>
-        </div>
-
-        <div class="accessibility-alt">
-            <h3>Activity 2: Screen Reader &amp; Keyboard Accessible Version</h3>
-            <p><strong>Task:</strong> Form a logical sentence by organizing the words below to complete the response.</p>
-            <p><strong>Sentence Structure:</strong> "They are [Blank 1] [Blank 2] [Blank 3] [Blank 4] [Blank 5]."</p>
-            <p><strong>Word Pool (contains 1 extra distractor word):</strong> powerhouses | cells | the | considered | of | time</p>
         </div>
     </div>
 
